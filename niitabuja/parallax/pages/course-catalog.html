@@ -1,0 +1,43 @@
+<section id="content" ng-controller="courseController">
+	
+	<div class="content-wrap">
+
+		<div class="container clearfix">
+			
+			<div class="fancy-title title-dotted-border">
+				<center>
+					<h3 class="themify-color">Our Course Catalog</h3>
+					<h4>Our extensive course catalog has more than 2,200 professional development opportunities for you and your team to sharpen your skills and optimize business operations. Because technology is always changing and competition id fierce, we give you the tools to position yourself as the "go-to" source in the marketplace. Our experts know the ins and outs of the latest technilogies and products. So whether you're diving into analytics and data management, looking to the cloud or ensuring you professional certifications are up to date, we're here for you.</h4>
+				</center>
+			</div>
+			<div class="col-md-6 col_last col-md-offset-3">
+				<input type="text" value="" class="sm-form-control" placeholder="search" ng-model="courseFilter"/>
+			</div>
+			<div class="col_one_third"></div>
+			<div class="clear"></div>
+			<div ng-repeat="course in courseList | filter:courseFilter" class="preloader">
+				<div class="col_one_third" ng-if="!clearTime($index + 1)">
+					<div class="feature-box fbox-effect">
+						<div class="fbox-icon">
+							<a href="#"><i class="{{course.icon}} i-alt"></i></a>
+						</div>
+						<h3>{{course.title}}</h3>
+						<p>{{course.description}}</p>
+					</div>
+				</div>
+				<div class="col_one_third col_last" ng-if="clearTime($index + 1)">
+					<div class="feature-box fbox-effect">
+						<div class="fbox-icon">
+							<a href="#"><i class="{{course.icon}} i-alt"></i></a>
+						</div>
+						<h3>{{course.title}}</h3>
+						<p>{{course.description}}</p>
+					</div>
+				</div>
+				<div class="clear" ng-if="clearTime($index + 1)"></div>
+			</div>
+		</div>
+
+	</div>
+
+</section>
