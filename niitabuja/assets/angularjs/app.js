@@ -20,8 +20,14 @@ angular.module('site', [
 
 	$locationProvider.html5Mode(true);
 })
+.controller("mainController", function($scope, $sce){
+	$scope.trust = function(url){
+		return $sce.trustAsResourceUrl(url);
+	}
+})
 
 .controller("courseController", function($scope, $http){
+
 	$http.get("http://public.niitabuja.com/course-list.php").then(function(success){
 		$scope.courseList = success.data;
 	}, function(error){
