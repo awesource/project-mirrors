@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US">
 <head>
-  <!-- Site made with Mobirise Website Builder v3.5.1, https://mobirise.com -->
-  <base href="/">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
-  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
+	<base href="/">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Samuel Adeshina" />
 
-  <script src="assets/angularjs/angular.js"></script>
-  <script src="assets/angularjs/app.js"></script>
-  <script src="assets/angularjs/angular-route.js"></script>
-  <script src="assets/angularjs/ngStorage.js"></script>
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="assets/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
-  <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
-  <script src="assets/social-likes/social-likes.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="assets/http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script src="assets/angularjs/angular.js"></script>
+  	<script src="assets/angularjs/app.js"></script>
+  	<script src="assets/angularjs/angular-route.js"></script>
+  	<script src="assets/angularjs/ngStorage.js"></script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>NIIT Abuja</title>
+
 </head>
-<body ng-app="site">
-    <ng-include src="'pages/header.html'"></ng-include>
-    <div class="row">
-        <div class="col-md-12" style="margin-top: 120px;">
-            <ng-view></ng-view>
-        </div>
-    </div>
-    <ng-include src="'pages/footer.html'"></ng-include>
-    <input name="animation" type="hidden">
+
+<body class="stretched" ng-app="site">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		<!-- Header
+		============================================= -->
+		<ng-include src="'pages/header.html'"></ng-include>
+		<!-- #header end -->
+
+		<div class="clear"></div>
+
+		<!-- Content
+		============================================= -->
+		<ng-view></ng-view>
+		<!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<ng-include src="'pages/footer.html'"></ng-include>
+		<!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+
 </body>
 </html>
