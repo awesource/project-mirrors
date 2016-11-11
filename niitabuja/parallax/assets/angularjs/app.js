@@ -18,7 +18,7 @@ angular.module('site', [
 		redirectTo: '/'
 	});
 
-	$locationProvider.html5Mode(true);
+	// $locationProvider.html5Mode(true);
 })
 
 .controller("courseController", function($scope, $http){
